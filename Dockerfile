@@ -14,5 +14,8 @@ COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 # copy project
 COPY . .
+RUN mkdir /root/.config/ \
+    && mkdir /root/.config/gspread 
+COPY service_account.json /root/.config/gspread/service_account.json
 RUN python manage.py migrate
 EXPOSE 8008

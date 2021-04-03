@@ -1,4 +1,5 @@
 import gspread
+import sys
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from .forms import NorthValleyContactForm
@@ -36,9 +37,10 @@ def north_valley(request):
 				request.META['HTTP_USER_AGENT'],
 				get_client_ip(request)])
 			message = "Дата: {}\n ФИО: {}\n email:{}\n Телефон: {}".format(dt, form.data['name'], form.data['email'], form.data['phone'])
-			send_mail("Новая запись. Северная долина", message, "k.svyatov@ulstu.ru", ["k.svyatov@gmail.com"])
-		except:
-			print("exception in form sending")
+			#send_mail("Новая запись. Северная долина", message, "k.svyatov@ulstu.ru", ["k.svyatov@gmail.com"])
+		except Exception:
+                        exc_type, exc_value, exc_traceback = sys.exc_info()
+                        print("exception in form sending: ", exc_type, exc_value, exc_traceback)
 		return HttpResponseRedirect('/landings/northvalley/#contact')
 
 	# if a GET (or any other method) we'll create a blank form
