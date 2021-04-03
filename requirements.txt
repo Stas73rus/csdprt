@@ -1,0 +1,9 @@
+google-api-python-client
+django
+django-bootstrap4
+Pillow
+gspread
+oauth2client
+dj-database-url
+psycopg2
+gunicorn
