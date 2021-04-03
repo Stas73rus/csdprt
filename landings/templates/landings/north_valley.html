@@ -8,17 +8,18 @@
              style="background-image: url({% static 'img/north_valley.jpeg' %});">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8 text-center">
+                <div class="col-12 col-md-10 col-lg-10 text-center">
 
-                    <p></p>
+                    <h3 class="text-white-70">Учебный центр компьютерных технологий "Северная долина"</h3>
+                    <br/>
                     <!-- Heading -->
                     <h1 class="display-3 fw-bold text-white">
-                        Стань программистом с нуля за год!
+                        Стань программистом <br/> с нуля за год!
                     </h1>
 
                     <!-- Text -->
                     <p class="lead text-white-75 mb-0">
-                        Единственные в Ульяновске профессиональные курсы переподготовки по ИТ для взрослых от ведущего
+                        Профессиональные курсы переподготовки по ИТ <br/>для взрослых от ведущего
                         ИТ-вуза региона!
                     </p>
                     <br/>
@@ -210,7 +211,8 @@
                     <!-- Text -->
                     <p class="fs-lg text-gray-700">
                         Чтобы освоить профессию веб-программиста, получить базовую подготовку в ИТ и устроиться на
-                        высокооплачиваемую работу в одну из более чем 200 ИТ-компаний Ульяновска или в другие компании России и мира.
+                        высокооплачиваемую работу в одну из более чем 200 ИТ-компаний Ульяновска или в другие компании
+                        России и мира.
                     </p>
                     <small class="text-gray-500">
                         <!-- Link -->
@@ -738,149 +740,188 @@
             </div>
         </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                        <h4 class="fw-bold text-center mb-1" id="modalExampleTitle">
+                            Спасибо за заполнение! Мы получили данные и обязательно свяжемся с Вами!
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </section>
 
 
-        <!-- INFO -->
+    <!-- INFO -->
     <!-- FORM -->
     <section class="pt-8 pt-md-11 pb-8 pb-md-14">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
 
-            <!-- Heading -->
-            <h2 class="fw-bold" id="contact">
-              Запишитесь на курсы!
-            </h2>
+                    <!-- Heading -->
+                    <h2 class="fw-bold" id="contact">
+                        Запишитесь на курсы!
+                    </h2>
 
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-7 mb-md-9">
-              Заполните форму, мы обязательно свяжемся в Вами и все расскажем.
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-12 col-lg-10">
-
-            <!-- Form -->
-            <form action="/landings/northvalley/" method="post">
-                {% csrf_token %}
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <div class="form-group mb-5">
-
-                    <!-- Label -->
-                    <label class="form-label" for="name">
-                      ФИО
-                    </label>
-
-                    <!-- Input -->
-                    <input class="form-control" id="name" name="name" type="text" placeholder="Укажите ваши ФИО здесь">
-
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="form-group mb-5">
-
-                    <!-- Label -->
-                    <label class="form-label" for="email">
-                      Email
-                    </label>
-
-                    <!-- Input -->
-                    <input class="form-control" id="email" name="email" type="email" placeholder="hello@domain.com">
-
-                  </div>
-                </div>
-              </div> <!-- / .row -->
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-group mb-7 mb-md-9">
-
-                    <!-- Label -->
-                    <label class="form-label" for="phone">
-                      Контактный телефон
-                    </label>
-
-                    <!-- Input -->
-                    <input class="form-control" id="phone" name="phone" type="phone" placeholder="+79999999999">
-
-                  </div>
-                </div>
-              </div> <!-- / .row -->
-              <div class="row justify-content-center">
-                <div class="col-auto">
-
-                  <!-- Submit -->
-                  <button type="submit" class="btn btn-primary lift">
-                    Отправить данные
-                  </button>
+                    <!-- Text -->
+                    <p class="fs-lg text-muted mb-7 mb-md-9">
+                        Заполните форму, мы обязательно свяжемся в Вами и все расскажем.
+                    </p>
 
                 </div>
-              </div> <!-- / .row -->
-            </form>
+            </div> <!-- / .row -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12 col-lg-10">
 
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+                    <!-- Form -->
+                    <form action="/landings/northvalley/" method="post" id="contactForm">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group mb-5">
+
+                                    <!-- Label -->
+                                    <label class="form-label" for="name">
+                                        ФИО
+                                    </label>
+
+                                    <!-- Input -->
+                                    <input class="form-control" id="name" name="name" type="text"
+                                           placeholder="Укажите ваши ФИО здесь">
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group mb-5">
+
+                                    <!-- Label -->
+                                    <label class="form-label" for="email">
+                                        Email
+                                    </label>
+
+                                    <!-- Input -->
+                                    <input class="form-control" id="email" name="email" type="email"
+                                           placeholder="hello@domain.com">
+
+                                </div>
+                            </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group mb-7 mb-md-9">
+
+                                    <!-- Label -->
+                                    <label class="form-label" for="phone">
+                                        Контактный телефон
+                                    </label>
+
+                                    <!-- Input -->
+                                    <input class="form-control" id="phone" name="phone" type="phone"
+                                           placeholder="+79999999999">
+
+                                </div>
+                            </div>
+                        </div> <!-- / .row -->
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+
+                                <!-- Submit -->
+                                <button type="submit" id="sendDataButton" class="btn btn-primary lift">
+                                    Отправить данные
+                                </button>
+
+                            </div>
+                        </div> <!-- / .row -->
+                    </form>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
     </section>
 
     <section class="py-7 py-md-9 border-bottom border-gray-300" id="info">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center border-end border-gray-300">
 
-            <!-- Heading -->
-            <h6 class="text-uppercase text-gray-700 mb-1">
-              Приходите
-            </h6>
+                    <!-- Heading -->
+                    <h6 class="text-uppercase text-gray-700 mb-1">
+                        Приходите
+                    </h6>
 
-            <!-- Link -->
-            <div class="mb-5 mb-md-0">
+                    <!-- Link -->
+                    <div class="mb-5 mb-md-0">
               <span class="h4 text-muted small">
                 г. Ульяновск, ул. Северный Венец, 32, 3-ий корпус, ауд. 419
               </span>
-            </div>
+                    </div>
 
-          </div>
-          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+                </div>
+                <div class="col-12 col-md-4 text-center border-end border-gray-300">
 
-            <!-- Heading -->
-            <h6 class="text-uppercase text-gray-700 mb-1">
-              Позвоните
-            </h6>
+                    <!-- Heading -->
+                    <h6 class="text-uppercase text-gray-700 mb-1">
+                        Позвоните
+                    </h6>
 
-            <!-- Link -->
-            <div class="mb-5 mb-md-0">
+                    <!-- Link -->
+                    <div class="mb-5 mb-md-0">
               <span class="h4">
                 +7 (902) 357-35-67
               </span>
-                <br />
-                <span class="muted small">Лылова Анна Вячеславовна, зам. декана ФИСТ УлГТУ</span>
-            </div>
+                        <br/>
+                        <span class="muted small">Лылова Анна Вячеславовна, зам. декана ФИСТ УлГТУ</span>
+                    </div>
 
-          </div>
-          <div class="col-12 col-md-4 text-center">
+                </div>
+                <div class="col-12 col-md-4 text-center">
 
-            <!-- Heading -->
-            <h6 class="text-uppercase text-gray-700 mb-1">
-              Напишите
-            </h6>
+                    <!-- Heading -->
+                    <h6 class="text-uppercase text-gray-700 mb-1">
+                        Напишите
+                    </h6>
 
-            <!-- Link -->
-            <a href="mailto:fist@ulstu.ru" class="h4">
-              fist@ulstu.ru
-            </a>
+                    <!-- Link -->
+                    <a href="mailto:fist@ulstu.ru" class="h4">
+                        fist@ulstu.ru
+                    </a>
 
-          </div>
-        </div> <!-- / .row -->
-      </div>
+                </div>
+            </div> <!-- / .row -->
+        </div>
     </section>
-
-
-
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $("#contactForm").submit(function (data) {
+            $.ajax({
+                type: $(this).attr('method'),
+                url: $(this).attr('action'),
+                data: $(this).serialize(),
+                context: this,
+                success: function (response) {
+                    if (response.result === "ok") {
+                        $('#myModal').modal('show');
+                        return false;
+                    } else {
+                        alert(response.data);
+                    }
+                },
+                error: function (rs, e) {
+                    alert(rs.responseText);
+                }
+            });
+            return false;
+        });
+    </script>
     <style type="text/css" data-typed-js-css="true">
         .typed-cursor {
             opacity: 1;
