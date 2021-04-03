@@ -1,8 +1,11 @@
 import os
 import sys
+import django
 from pathlib import Path
 import dj_database_url
 from django.core.management.utils import get_random_secret_key
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
+SECRET_KEY = get_random_secret_key()#os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
@@ -134,7 +137,7 @@ if DEVELOPMENT_MODE:
         os.path.join(BASE_DIR, "static/"),
     ]
 else:
-    STATIC_ROOT = '/'#os.environ.get("STATIC_URL", os.path.join(BASE_DIR, "static"))
+    STATIC_ROOT = 'static/'#os.environ.get("STATIC_URL", os.path.join(BASE_DIR, "static"))
 
 print('DEVELOPMENT_MODE', DEVELOPMENT_MODE, BASE_DIR, STATIC_URL)
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads/")
@@ -154,3 +157,5 @@ DEFAULT_FROM_EMAIL = 'FIST team <k.svyatov@ulstu.ru>'
 SERVER_EMAIL='k.svyatov@ulstu.ru'
 
 NORTH_VALLEY_SHEET_NAME = "digital valley leads"
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", __file__)
+django.setup()
