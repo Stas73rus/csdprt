@@ -783,7 +783,7 @@
                 <div class="col-12 col-md-12 col-lg-10">
 
                     <!-- Form -->
-                    <form action="/landings/northvalley/" method="post" id="contactForm">
+                    <form action="{{ request.build_absolute_uri }}" method="post" id="contactForm">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-12 col-md-6">
@@ -791,7 +791,7 @@
 
                                     <!-- Label -->
                                     <label class="form-label" for="name">
-                                        ФИО
+					    ФИО 
                                     </label>
 
                                     <!-- Input -->
@@ -904,7 +904,7 @@
         $("#contactForm").submit(function (data) {
             $.ajax({
                 type: $(this).attr('method'),
-                url: $(this).attr('action'),
+                url: window.location.href,//$(this).attr('action'),
                 data: $(this).serialize(),
                 context: this,
                 success: function (response) {

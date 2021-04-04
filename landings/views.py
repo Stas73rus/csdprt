@@ -50,5 +50,6 @@ def north_valley(request):
 	# if a GET (or any other method) we'll create a blank form
 	else:
 		form = NorthValleyContactForm()
+		print(request.META)
 		return render(request, 'landings/north_valley.html', {'form': form})
 
