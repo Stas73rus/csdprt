@@ -15,7 +15,7 @@
     <div class="container-fluid">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="{% url 'persons:index' %}">
+        <a class="navbar-brand" href="{% url 'landings:index' %}">
             <img src="{% static 'img/fist_logo.png' %}" class="navbar-brand-img" alt="..."/>
             <img src="{% static 'img/ulstu_logo.png' %}" class="navbar-brand-img" alt="..."/>
             <span>ФИСТ УлГТУ</span>
@@ -56,13 +56,13 @@
                                             </h6>
 
                                             <!-- List -->
-                                            <a class="dropdown-item" href="../coworking.html">
+                                            <a class="dropdown-item" href="https://vk.com/fist_school" target="_blank">
                                                 <b>Компьютерная школа ФИСТ</b>
                                             </a>
-                                            <a class="dropdown-item" href="../rental.html">
+                                            <a class="dropdown-item" href="http://pk.ulstu.ru/" target="_blank">
                                                 Подача документов
                                             </a>
-                                            <a class="dropdown-item" href="../rental.html">
+                                            <a class="dropdown-item" href="http://pk.ulstu.ru/Documents/2020/PB.pdf" target="_blank">
                                                 Проходные баллы
                                             </a><br/>
 
@@ -72,7 +72,7 @@
                                             </h6>
 
                                             <!-- List -->
-                                            <a class="dropdown-item" href="../desktop-app.html">
+                                            <a class="dropdown-item" href="{% url 'landings:index' %}#programs">
                                                 Направления подготовки ФИСТ
                                             </a>
                                             <a class="dropdown-item" href="../mobile-app.html">
@@ -88,14 +88,11 @@
                                             </h6>
 
                                             <!-- List -->
-                                            <a class="dropdown-item" href="../index.html">
+                                            <a class="dropdown-item" href="{% url 'landings:index' %}#why">
                                                 Что дает высшее образование?
                                             </a>
-                                            <a class="dropdown-item" href="../startup.html">
-                                                Кем работать после ФИСТ?
-                                            </a>
-                                            <a class="dropdown-item" href="../enterprise.html">
-                                                Где работать после ФИСТ?
+                                            <a class="dropdown-item" href="https://ulyanovsk.hh.ru/search/vacancy?area=1614&clusters=true&enable_snippets=true&specialization=1.221&only_with_salary=true&salary=100000&from=cluster_compensation&showClusters=true" target="_blank">
+                                                Где и кем работать после ФИСТ?
                                             </a>
                                             <br/>
 
@@ -104,13 +101,13 @@
                                             </h6>
 
                                             <!-- List -->
-                                            <a class="dropdown-item" href="../index.html">
+                                            <a class="dropdown-item" href="http://ulivt.ru/ratings.php" target="_blank">
                                                 Чемпионат по программированию ulivt.ru
                                             </a>
-                                            <a class="dropdown-item" href="../startup.html">
+                                            <a class="dropdown-item" href="https://dovuz.sfu-kras.ru/belchonok/" target="_blank">
                                                 Всероссийская олимпиада Бельчонок
                                             </a>
-                                            <a class="dropdown-item" href="../enterprise.html">
+                                            <a class="dropdown-item" href="http://masterit.info/" target="_blank">
                                                 Конкурс Master IT
                                             </a>
 

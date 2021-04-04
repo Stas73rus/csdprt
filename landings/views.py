@@ -53,3 +53,8 @@ def north_valley(request):
 		print(request.META)
 		return render(request, 'landings/north_valley.html', {'form': form})
 
+def enter(request):
+	return render(request, 'landings/enter.html')
+
+def index(request):
+	return render(request, 'landings/index.html')
