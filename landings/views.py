@@ -20,6 +20,14 @@ def get_client_ip(request):
 def index(request) :
 	return render(request, "landings/index.html")
 
+def history(request) :
+	return render(request, "landings/history.html")
+
+def compschool(request) :
+	return render(request, "landings/compschool.html")
+
+
+
 def north_valley(request):
 	if request.method == 'POST':
 		try:

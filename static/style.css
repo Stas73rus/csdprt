@@ -19,3 +19,11 @@ body.main{
    min-height: 25px;
    height: 15px;
 }
+
+.text-justify {
+  text-align: justify;
+}
+
+.display-45 {
+    font-size: 1.7rem;
+}
