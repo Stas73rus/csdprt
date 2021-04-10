@@ -22,36 +22,37 @@
 6. Показать проект на защите проектов.
 
 ### Backlog
-1. Блог
+#### 1. Блог
 Воозможность писать статьи, которые могут быть оформлены как отдельные страницы, либо как новости
 * Теги (id, name, description, author, date) - для создания рубрикатора и облака тегов, которые связывают многие сущности между собой (статьи, проекты, дисциплины, преподаватели)
 * Статьи (id, title, text (wysiwyg), tags[], author, date, comments)
 * Типы статей (id, name, title)
 
-2. FIST ideas
+#### 2. FIST ideas
 Идеи проектов, которые могут быть реализованы студентами, у которых не хватает идей для реализации, или кому-то хочется что-то реализовать, но не хватает рук.
 Здесь необходимо проводить модерацию перед опубликованием.
 * Ideas (id, title, description, tags[], likes, dislikes, comments, goal, methods, technologies, is_moderated, moderator, projects)
 
 
-4. Projects
+#### 4. Projects
 Проекты, которые реализуются на факультете
 * Labs (id, description, address, tags[], areas[], )
 * Projects (id, description, tags[], posts[], areas[], lab, comments)
 * Areas (id, title, description) - области исследований (например, ML, robotics, ...)
 
-6. Events - мероприятия, которые проводятся на факультете. Важно сделать календарь событий во фронтовой части (представления за месяц/неделю/день)
+#### 6. Events
+Мероприятия, которые проводятся на факультете. Важно сделать календарь событий во фронтовой части (представления за месяц/неделю/день)
 * Events (id, title, event_type, description, date_start, date_end, tags[], participants[], projects[], areas[], parent_event)
 * EventTypes (id, title, name)
 
-7. Трудоустрйоство и партнерства
+#### 7. Трудоустрйоство и партнерства
 * Vacancies - список вакансий (структуру описания вакансии можно взять с hh.ru)
 * CVs - резюме тех людей, которые хотят найт работу.
 Необходимо задействовать ссылки на лаборатории, теги, проекты, идеи, статьи блога
 * Persons - преподаватели (почти готово уже)
 * Partners (id, name, address, persons, programs, tags, projects) - компании-партнеры
 
-8. Структура факультета
+#### 8. Структура факультета
 * Departments (id, name, descritption, history, persons, labs, events, projects) - кафедры
 * Programs (id, name, description, program_type, duration, partners) - направления подготовки
 * Program types (id, name, description) - типы направлений подготовки
