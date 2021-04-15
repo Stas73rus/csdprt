@@ -27,3 +27,33 @@
 ### Настройка python + google sheets (gspread)
 https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
 https://buildmedia.readthedocs.org/media/pdf/gspread/latest/gspread.pdf
+
+# Работа с docker
+## Запуск docker
+[Описание создания окружения](https://webdevblog.ru/kak-ispolzovat-django-postgresql-i-docker/)
+```bash
+docker-compose up -d --build
+```
+
+## Остановка контейнера
+```bash
+docker-compose down -v
+```
+
+## Миграция БД
+```bash
+docker-compose exec webcs python manage.py makemigrations
+docker-compose exec webcs python manage.py migrate --noinput
+docker-compose exec webcs python manage.py createsuperuser
+```
+## Просмотр логов
+```bash
+docker-compose logs -f
+```
+
+## Зайти в терминал docker контейнера
+```bash
+docker container ps -a
+docker exec -it [ID] /bin/sh
+```
+
