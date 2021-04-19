@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/libs.bundle.css' %}"/>
     <link rel="stylesheet" href="{% static 'assets/css/theme.bundle.css' %}"/>
     <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'assets/css/blog.css' %}"/>
 </head>
 <body class="main bg-light" data-aos-easing="ease-out-quad" data-aos-duration="700"
       data-aos-delay="0">
@@ -38,6 +39,12 @@
 
             <!-- Navigation -->
             <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog:news' %}">
+                        Новости
+                    </a>
+
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarEnrolee" data-bs-toggle="dropdown" href="#"
                        aria-haspopup="true" aria-expanded="false">
@@ -141,6 +148,9 @@
                                             </a>
                                             <a class="dropdown-item" href="https://www.ulstu.ru/main/view/article/1040" target="_blank">
                                                 Официальные адреса и контакты
+                                            </a>
+                                            <a class="dropdown-item" href="{% url 'blog:article_detail' %}">
+                                                Пример статьи
                                             </a><br/>
 
                                             <!-- Heading -->
@@ -436,6 +446,8 @@
                                                 <!-- List -->
                                                 <a class="dropdown-item" href="{% url 'accounts:profile_change' %}">Данные
                                                     профиля</a>
+                                                <a class="dropdown-item" href="{% url 'blog:news_admin' %}">Мои новости</a>
+                                                <a class="dropdown-item" href="{% url 'blog:news_admin' %}">Мои статьи</a>
                                                 <a class="dropdown-item" href="{% url 'accounts:password_change' %}">Сменить
                                                     пароль</a>
                                                 <a class="dropdown-item" href="{% url 'accounts:logout' %}">Выйти</a>
