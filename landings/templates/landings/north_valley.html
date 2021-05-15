@@ -1,0 +1,953 @@
+{% extends "header.html" %}
+
+{% block title %}ИТ Курсы УлГТУ{% endblock %}
+{% load static %}
+
+{% block content %}
+    <section data-jarallax data-speed=".8" class="pt-10 pb-11 py-md-14 overlay overlay-black overlay-70 jarallax"
+             style="background-image: url({% static 'img/north_valley.jpeg' %});">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-10 text-center">
+
+                    <h3 class="text-white-70">Учебный центр компьютерных технологий "Северная долина"</h3>
+                    <br/>
+                    <!-- Heading -->
+                    <h1 class="display-3 fw-bold text-white">
+                        Стань программистом <br/> с нуля за год!
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="lead text-white-75 mb-0">
+                        Профессиональные курсы переподготовки по ИТ <br/>для взрослых от ведущего
+                        ИТ-вуза региона!
+                    </p>
+                    <br/>
+                    <br/>
+                    <a href="#contact" class="btn btn-pill btn-primary lift" style="position: fixed top">
+                        Записаться <i class="fe fe-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+        <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/>
+            </svg>
+        </div>
+    </div>
+
+
+    <section class="pt-8 pt-md-11 bg-gradient-light-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-lg-8 text-center">
+
+
+                    <!-- Heading -->
+                    <h1>
+                        Для кого?
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="fs-lg text-gray-700 mb-7 mb-md-9">
+                        Для всех, кто хочет переквалифицироваться в программиста.
+                    </p>
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-12 col-md-4" data-aos="fade-up">
+
+                    <!-- Card -->
+                    <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+
+                        <!-- Image -->
+                        <img src="{% static 'assets/img/photos/photo-4.jpg' %}" alt="..." class="card-img-top">
+
+                        <!-- Shape -->
+                        <div class="position-relative">
+                            <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body position-relative">
+
+
+                            <!-- Heading -->
+                            <h3>
+                                Выпускникам
+                            </h3>
+
+                            <!-- Text -->
+                            <p class="text-muted">
+                                Тем, кто давно окончил вуз или СПО и хочет сменить профессию.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+
+                    <!-- Card -->
+                    <div class="card shadow-light-lg mb-6 mb-md-0 lift lift-lg">
+
+                        <!-- Image -->
+                        <img src="{% static 'assets/img/photos/photo-5.jpg' %}" alt="..." class="card-img-top">
+
+                        <!-- Shape -->
+                        <div class="position-relative">
+                            <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body position-relative">
+
+                            <!-- Heading -->
+                            <h3>
+                                Студентам
+                            </h3>
+
+                            <!-- Text -->
+                            <p class="text-muted">
+                                Тем, кто учится не по ИТ профилю.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+
+                    <!-- Card -->
+                    <div class="card shadow-light-lg lift lift-lg">
+
+                        <!-- Image -->
+                        <img src="{% static 'assets/img/photos/photo-6.jpg' %}" alt="..." class="card-img-top">
+
+                        <!-- Shape -->
+                        <div class="position-relative">
+                            <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="card-body position-relative">
+
+                            <!-- Heading -->
+                            <h3>
+                                ИТ-специалистам
+                            </h3>
+
+                            <!-- Text -->
+                            <p class="text-muted">
+                                Тем, кто уже работает в ИТ, но не хватает базовой подготовки.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+
+
+    <section class="pt-4 pt-md-11">
+        <div class="container">
+
+
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-md-6 img-skewed img-skewed-end">
+
+                    <!-- Code -->
+                    <div class="card rounded-lg bg-black mb-6 mb-md-0 img-skewed-item screenshot">
+                        <div class="card-header border-white-10">
+
+                            <!-- Controls -->
+                            <div class="d-flex">
+                                <span class="bg-danger rounded-circle" style="width: 10px; height: 10px;"></span>
+                                <span class="bg-warning rounded-circle ms-1" style="width: 10px; height: 10px;"></span>
+                                <span class="bg-success rounded-circle ms-1" style="width: 10px; height: 10px;"></span>
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+
+                            <!-- Code -->
+                            <code class="highlight"
+                                  data-typed='{"backSpeed":2, "strings": ["&gt;&nbsp;$&nbsp;ФИСТ&nbsp;УлГТУ.&nbsp;Курсы&nbsp;Северной&nbsp;долины<br/><span class=\"text-success\">Верный&nbsp;шаг&nbsp;в&nbsp;смене&nbsp;профессии!</span><br /><br />&gt;&nbsp;$&nbsp;npm&nbsp;install<br/><span class=\"text-success\">Everything&nbsp;is&nbsp;installed</span><br/><br/>&gt;&nbsp;$&nbsp;npm start<br/><span class=\"text-success\">scss&nbsp;watching</span><br/><span class=\"text-success\">LiveReload&nbsp;started</span><br/><span class=\"text-success\">Opening&nbsp;localhost:8080</span>"]}'
+                                  style="min-height: 183px;"></code>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                    <!-- Heading -->
+                    <h2>
+                        Зачем?
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="fs-lg text-gray-700">
+                        Чтобы освоить профессию веб-программиста, получить базовую подготовку в ИТ и устроиться на
+                        высокооплачиваемую работу в одну из более чем 200 ИТ-компаний Ульяновска или в другие компании
+                        России и мира.
+                    </p>
+                    <small class="text-gray-500">
+                        <!-- Link -->
+                        Посмотрите актуальные ульяновские вакансии на <br/>
+                        <a class="fw-bold text-decoration-none"
+                           href="https://ulyanovsk.hh.ru/search/vacancy?area=1614&clusters=true&enable_snippets=true&specialization=1.221&only_with_salary=true&salary=100000&from=cluster_compensation&showClusters=true"
+                           target="_blank">
+                            hh.ru <i class="fe fe-arrow-right ms-3"></i>
+                        </a>
+                    </small>
+
+                </div>
+            </div> <!-- / .row -->
+        </div>
+
+    </section>
+
+    <section class="pt-8 pt-md-11 bg-gradient-light-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+
+
+                    <!-- Heading -->
+                    <h1>
+                        Кто проводит курсы?
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Card -->
+                    <div class="card card-row shadow-light-lg mb-6 lift lift-lg">
+                        <div class="row gx-0">
+                            <div class="col-12">
+
+                                <!-- Badge -->
+                                <span class="badge rounded-pill bg-light badge-float badge-float-inside">
+                                    <span class="h6 text-uppercase">Лидер ИТ-отрасли</span>
+                                </span>
+
+                            </div>
+                            <a class="col-12 col-md-6 order-md-2 bg-cover card-img-end"
+                               style="background-image: url({% static 'img/simbirsoft.jpeg' %});" href="#!">
+
+                                <!-- Image (placeholder) -->
+                                <img src="{% static 'assets/img/photos/photo-27.jpg' %}" alt="..."
+                                     class="img-fluid d-md-none invisible">
+
+                                <!-- Shape -->
+                                <div class="shape shape-start shape-fluid-y svg-shim text-white d-none d-md-block">
+                                    <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h62.759v172C38.62 384 112 517 112 517v173H0V0z"
+                                              fill="currentColor"/>
+                                    </svg>
+                                </div>
+
+                            </a>
+                            <div class="col-12 col-md-6 order-md-1">
+
+                                <!-- Body -->
+                                <a class="card-body" href="https://simbirsoft.com" target="_blank">
+
+                                    <!-- Heading -->
+                                    <h3>УлГТУ совместно с Simbirsoft
+                                    </h3>
+
+                                    <!-- Text -->
+                                    <p class="mb-0 text-muted">
+                                        SimbirSoft - крупнейшая ИТ-компания Ульяновска. 20 лет на рынке, входит в TOP
+                                        100 лучших разработчиков-аутсорсеров мира, более 900 сотрудников в разных
+                                        городах России, более 900 реализованных проектов.
+                                    </p>
+
+                                </a>
+
+
+                            </div>
+
+                        </div> <!-- / .row -->
+                    </div>
+
+
+                    <div class="card card-row shadow-light-lg mb-6">
+                        <div class="row gx-0">
+                            <div class="col-12">
+
+                                <!-- Badge -->
+                                <span class="badge rounded-pill bg-gray-600 badge-float badge-float-outside">
+                    <span class="h6 text-uppercase">Лидер ИТ-образования</span>
+                  </span>
+
+                            </div>
+                            <a class="col-12 col-md-6 bg-cover card-img-start"
+                               style="background-image: url({% static 'img/fist.png' %});" href="#!">
+
+                                <!-- Image (placeholder) -->
+                                <img src="{% static 'assets/img/photos/photo-28.jpg' %}" alt="..."
+                                     class="img-fluid d-md-none invisible">
+
+                                <!-- Shape -->
+                                <div class="shape shape-end shape-fluid-y svg-shim text-white d-none d-md-block">
+                                    <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                </div>
+
+                            </a>
+                            <div class="col-12 col-md-6">
+
+                                <!-- Body -->
+                                <a class="card-body" href="http://fist.ulstu.ru" target="_blank">
+
+                                    <!-- Heading -->
+                                    <h3>
+                                        Факультет информационных систем и технологий УлГТУ.
+                                    </h3>
+
+                                    <!-- Text -->
+                                    <p class="mb-0 text-muted">
+                                        ФИСТ УлГТУ - лидер в Ульяновской области по подготовке специалистов для
+                                        ИТ-сферы.
+                                        Наши выпускники являются основателями многих компаний в России, США и других
+                                        странах, они работают в Yandex, Google, Apple, Лаборатории Касперского и других
+                                        ведущих ИТ-компаниях.
+                                        25 лет мы идем в ногу со временем и учим самым современным технологиям.
+                                    </p>
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+
+        </div>
+    </section>
+
+
+    <section class="py-8 pt-md-11 pb-md-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Сколько это займет времени?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 text-center">
+
+                    <!-- Heading -->
+                    <h1 class="display-2 fw-bold text-primary-desat">
+                        <span data-countup='{"startVal": 0}' data-to="9" data-aos data-aos-id="countup:in">0</span>
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-6 mb-md-0">
+                        Месяцев обучения в течение года
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4 text-center">
+
+                    <!-- Heading -->
+                    <h1 class="display-2 fw-bold text-primary-desat">
+                        <span>9-12</span>
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-6 mb-md-0">
+                        Часов в неделю, включая самостоятельную работу.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4 text-center">
+
+                    <!-- Heading -->
+                    <h1 class="display-2 fw-bold text-primary-desat">
+                        <span>2</span>
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-0">
+                        Очных занятия в неделю по 3 часа каждое в вечернее время.
+                    </p>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+    <section class="py-8 py-md-11">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+
+                    <!-- Heading -->
+                    <h2 class="text-center text-primary">
+                        Сколько это стоит?
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="mb-6 mb-md-8 text-center">
+                        <b>60000</b> рублей за год. Возможна "посеместровая" или ежемесячная оплата.
+                        <br/>
+                        <small class="text-muted"> Это меньше одной зарплаты программиста среднего уровня за
+                            месяц. По окончании обучения выдается диплом о профессиональной переподготовке
+                            государственного
+                            образца.</small>
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="{% static 'assets/img/illustrations/illustration-3.png' %}" class="img-fluid" alt="...">
+                </div>
+
+            </div> <!-- / .row -->
+        </div>
+    </section>
+
+
+    <!-- STEPS -->
+    <div class="section bg-black pt-12 pb-8 pb-md-11">
+        <div class="container">
+            <div class="row justify-content-between align-items-center mb-5">
+                <div class="col-12 col-md-12 order-md-1">
+
+                    <!-- Heading -->
+                    <h2 class="text-white" style="max-width: 450px;">
+                        Почему очное обучение лучше дистанционного?
+                    </h2>
+
+                    <!-- Text -->
+                    <div class="lead text-muted-80 mb-0">
+                        Коммуникация - важнейший аспект обучения профессии. Профессиональный преподаватель и наставник
+                        помогут в освоении программы обучения и при выполнении проекта.
+                    </div>
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-auto col-md-12">
+
+                            <!-- Step -->
+                            <div class="row gx-0 align-items-center mb-md-5">
+                                <div class="col-auto">
+
+                                    <!-- Number -->
+                                    <a class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1"
+                                       href="#!">
+                                        <span>1</span>
+                                    </a>
+
+                                </div>
+                                <div class="col">
+
+                                    <!-- Divider -->
+                                    <hr class="d-none d-md-block bg-gray-900-50 me-n7">
+
+                                </div>
+                            </div> <!-- / .row -->
+
+                        </div>
+                        <div class="col col-md-12 ms-n5 ms-md-0">
+
+                            <!-- Heading -->
+                            <h3 class="text-white">
+                                Знания
+                            </h3>
+
+                            <!-- Text -->
+                            <p class="text-muted-80 mb-6 mb-md-0">
+                                Получение системных знаний в области программирования и принципов функционирования
+                                ИТ-систем.
+                            </p>
+
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-auto col-md-12">
+
+                            <!-- Step -->
+                            <div class="row gx-0 align-items-center mb-md-5">
+                                <div class="col-auto">
+
+                                    <!-- Number -->
+                                    <a href="#!"
+                                       class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1">
+                                        <span>2</span>
+                                    </a>
+
+                                </div>
+                                <div class="col">
+
+                                    <!-- Divider -->
+                                    <hr class="d-none d-md-block bg-gray-900-50 me-n7">
+
+                                </div>
+                            </div> <!-- / .row -->
+
+                        </div>
+                        <div class="col col-md-12 ms-n5 ms-md-0">
+
+                            <!-- Heading -->
+                            <h3 class="text-white">
+                                Прагматичность
+                            </h3>
+
+                            <!-- Text -->
+                            <p class="text-muted-80 mb-6 mb-md-0">
+                                В ИТ-компаниях нужны люди, которые умеют решать проблемы, а не просто переводить
+                                требования ТЗ в программный код. На ФИСТ УлГТУ мы учим решать задачи.
+                            </p>
+
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-auto col-md-12">
+
+                            <!-- Step -->
+                            <div class="row gx-0 align-items-center mb-md-5">
+                                <div class="col-auto">
+
+                                    <!-- Number -->
+                                    <a href="#!"
+                                       class="btn btn-sm btn-rounded-circle btn-gray-400-10 disabled opacity-1">
+                                        <span>3</span>
+                                    </a>
+
+                                </div>
+                            </div> <!-- / .row -->
+
+                        </div>
+                        <div class="col col-md-12 ms-n5 ms-md-0">
+
+                            <!-- Heading -->
+                            <h3 class="text-white">
+                                Опыт
+                            </h3>
+
+                            <!-- Text -->
+                            <p class="text-muted-80 mb-0">
+                                Большой объем информации по новой профессии усвоить очень тяжело. Мы умеем объяснять
+                                сложные вещи простыми словами.
+                            </p>
+
+                        </div>
+                    </div> <!-- / .row -->
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container-->
+    </div>
+
+    <!-- STEPS -->
+    <div class="position-relative">
+        <div class="shape shape-top shape-fluid-x shape-flip-x svg-shim text-black">
+            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"/>
+            </svg>
+        </div>
+    </div>
+
+
+
+    <section class="py-8 py-md-11">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="text-center">
+
+                    <!-- Heading -->
+                    <h2>
+                        Чему учиться?
+                    </h2>
+                </div>
+                <div class="text-left">
+
+                    <table class="table program">
+                        <thead>
+                        <tr>
+                            <th scope="col">Модуль</th>
+                            <th scope="col">#</th>
+                            <th scope="col">Наименование раздела</th>
+                            <th scope="col">Количество часов общее</th>
+                            <th scope="col">Лекции</th>
+                            <th scope="col">Практики</th>
+                            <th scope="col">Самостоятельная работа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row" rowspan="5" valign="center">1</th>
+                            <td>1</td>
+                            <td>Основы цифровых технологий. Введение в профессию</td>
+                            <td>20</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Основы веб-дизайна</td>
+                            <td>18</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Введение в веб-разработку на HTML и CSS</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Основы графического дизайна</td>
+                            <td>20</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>Итого за модуль 1</b></td>
+                            <td>76</td>
+                            <td>22</td>
+                            <td>24</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="4">2</th>
+                            <td>5</td>
+                            <td>Введение в алгоритмизацию и программирование на языке C</td>
+                            <td>62</td>
+                            <td>18</td>
+                            <td>20</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Основы языка программирования на языке JavaScript</td>
+                            <td>26</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Система контроля версий git</td>
+                            <td>14</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>Итого за модуль 2</b></td>
+                            <td>102</td>
+                            <td>30</td>
+                            <td>32</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="5" valign="center">3</th>
+                            <td>8</td>
+                            <td>Введение в базы данных PostgreSQL</td>
+                            <td>28</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Основы сетевых технологий и операционных систем</td>
+                            <td>26</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Введение в технологии веб-программирования с использованием NodeJS</td>
+                            <td>28</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Итоговая аттестационная работа работа</td>
+                            <td>40</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><b>Итого за модуль 3</b></td>
+                            <td>122</td>
+                            <td>24</td>
+                            <td>24</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><b>Итого за весь курс</b></td>
+                            <td>300</td>
+                            <td>76</td>
+                            <td>80</td>
+                            <td>144</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                        <h4 class="fw-bold text-center mb-1" id="modalExampleTitle">
+                            Спасибо за заполнение! Мы получили данные и обязательно свяжемся с Вами!
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- INFO -->
+    <!-- FORM -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+
+                    <!-- Heading -->
+                    <h2 class="fw-bold" id="contact">
+                        Запишитесь на курсы!
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="fs-lg text-muted mb-7 mb-md-9">
+                        Заполните форму, мы обязательно свяжемся в Вами и все расскажем.
+                    </p>
+
+                </div>
+            </div> <!-- / .row -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12 col-lg-10">
+
+                    <!-- Form -->
+                    <form action="{{ request.build_absolute_uri }}" method="post" id="contactForm">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group mb-5">
+
+                                    <!-- Label -->
+                                    <label class="form-label" for="name">
+					    ФИО 
+                                    </label>
+
+                                    <!-- Input -->
+                                    <input class="form-control" id="name" name="name" type="text"
+                                           placeholder="Укажите ваши ФИО здесь">
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group mb-5">
+
+                                    <!-- Label -->
+                                    <label class="form-label" for="email">
+                                        Email
+                                    </label>
+
+                                    <!-- Input -->
+                                    <input class="form-control" id="email" name="email" type="email"
+                                           placeholder="hello@domain.com">
+
+                                </div>
+                            </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group mb-7 mb-md-9">
+
+                                    <!-- Label -->
+                                    <label class="form-label" for="phone">
+                                        Контактный телефон
+                                    </label>
+
+                                    <!-- Input -->
+                                    <input class="form-control" id="phone" name="phone" type="phone"
+                                           placeholder="+79999999999">
+
+                                </div>
+                            </div>
+                        </div> <!-- / .row -->
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+
+                                <!-- Submit -->
+                                <button type="submit" id="sendDataButton" class="btn btn-primary lift">
+                                    Отправить данные
+                                </button>
+
+                            </div>
+                        </div> <!-- / .row -->
+                    </form>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+    <section class="py-7 py-md-9 border-bottom border-gray-300" id="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center border-end border-gray-300">
+
+                    <!-- Heading -->
+                    <h6 class="text-uppercase text-gray-700 mb-1">
+                        Приходите
+                    </h6>
+
+                    <!-- Link -->
+                    <div class="mb-5 mb-md-0">
+              <span class="h4 text-muted small">
+                г. Ульяновск, ул. Северный Венец, 32, 3-ий корпус, ауд. 419
+              </span>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4 text-center border-end border-gray-300">
+
+                    <!-- Heading -->
+                    <h6 class="text-uppercase text-gray-700 mb-1">
+                        Позвоните
+                    </h6>
+
+                    <!-- Link -->
+                    <div class="mb-5 mb-md-0">
+              <span class="h4">
+                +7 (902) 357-35-67
+              </span>
+                        <br/>
+                        <span class="muted small">Лылова Анна Вячеславовна, зам. декана ФИСТ УлГТУ</span>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-4 text-center">
+
+                    <!-- Heading -->
+                    <h6 class="text-uppercase text-gray-700 mb-1">
+                        Напишите
+                    </h6>
+
+                    <!-- Link -->
+                    <a href="mailto:fist@ulstu.ru" class="h4">
+                        fist@ulstu.ru
+                    </a>
+
+                </div>
+            </div> <!-- / .row -->
+        </div>
+    </section>
+    <script type="text/javascript">
+        $("#contactForm").submit(function (data) {
+            $.ajax({
+                type: $(this).attr('method'),
+                url: window.location.href,//$(this).attr('action'),
+                data: $(this).serialize(),
+                context: this,
+                success: function (response) {
+                    if (response.result === "ok") {
+                        $('#myModal').modal('show');
+                        return false;
+                    } else {
+                        alert(response.data);
+                    }
+                },
+                error: function (rs, e) {
+                    alert(rs.responseText);
+                }
+            });
+            return false;
+        });
+    </script>
+    <style type="text/css" data-typed-js-css="true">
+        .typed-cursor {
+            opacity: 1;
+        }
+
+        .typed-cursor.typed-cursor--blink {
+            animation: typedjsBlink 0.7s infinite;
+            -webkit-animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
+        }
+
+        @keyframes typedjsBlink {
+            50% {
+                opacity: 0.0;
+            }
+        }
+
+        @-webkit-keyframes typedjsBlink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+{% endblock %}
